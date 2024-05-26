@@ -15,8 +15,8 @@ html { /* This stuff is for the sticky footer. */
 }
 
 body {
-	background-color:#fafafa;
-	font-family:'Open Sans';
+	background-color: deepskyblue;
+	font-family:'Roboto';
 	margin: 20px auto 100px auto; /* For sticky footer. */
 }
 
@@ -44,12 +44,13 @@ body {
 }
 
 .sitetitle {
-	font-family: 'Merriweather';
+	font-family: 'Anton';
 	font-weight: 300;
 	font-size: 4em;
 	padding-left: 10px; /* Hack to dodge :hover issue. */
 	position: relative; /* Hack to dodge :hover issue. */
 	left: -10px; /* Hack to dodge :hover issue. */
+	color: ghostwhite;
 }
 
 .sitetitle a {
@@ -99,7 +100,7 @@ body {
 }
 
 .postsummary {
-	font-family: Merriweather;
+	font-family: Anton;
 	font-weight: 300;
 }
 
