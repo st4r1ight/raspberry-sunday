@@ -3,20 +3,25 @@
 
 /* Fonts */
 @font-face {
-	font-family: 'Anton';
-	src: url('../font/Anton/Anton-Regular.ttf');
+	font-family: 'Graduate';
+	src: url('../font/Graduate-Regular.woff2');
 }
 
 @font-face {
-	font-family: Roboto;
-	src: url();
+	font-family: 'Indie Flower';
+	src: url('../font/IndieFlower-Regular.woff2');
 }
 
 @font-face {
-	font-family: Roboto;
-	src: url('../font/Roboto/Roboto-Bold.ttf');
-	font-weight: bold;
+	font-family: 'Graduate';
+	src: url('../font/Graduate-Regular.ttf');
 }
+
+@font-face {
+	font-family: 'Indie Flower';
+	src: url('../font/IndieFlower-Regular.ttf');
+}
+
 /* General stuff. */
 
 body {
@@ -31,8 +36,8 @@ html { /* This stuff is for the sticky footer. */
 }
 
 body {
-	background-color: deepskyblue;
-	font-family:'Roboto';
+	background-color: #52b2cf;
+	font-family:'Open Sans';
 	margin: 20px auto 100px auto; /* For sticky footer. */
 }
 
@@ -42,6 +47,7 @@ body {
 	position: relative;
 	font-size: 18;
 	top: 15px;
+	text-align: center;
 }
 
 .siteheader {
@@ -66,7 +72,7 @@ body {
 	padding-left: 10px; /* Hack to dodge :hover issue. */
 	position: relative; /* Hack to dodge :hover issue. */
 	left: -10px; /* Hack to dodge :hover issue. */
-	color: ghostwhite;
+	color: #2a324b; 
 }
 
 .sitetitle a {
@@ -74,7 +80,7 @@ body {
 }
 
 .sitesubtitle {
-	color: #000;
+	color: #2a324b;
 	font-size: 1em;
 	margin-bottom: 30px;
 	margin-top: 20px;
@@ -141,7 +147,7 @@ a {
 	height: 3px;
 	bottom: 0;
 	left: 0;
-	background-color: orange;
+	background-color: #f6caca;
 	visibility: visible;
 	opacity: 0.6;
 	-webkit-transform: scaleX(0);
@@ -169,7 +175,7 @@ a:hover {
 	-webkit-transition:color .2s ease-in-out;
 	-moz-transition:color .2s ease-in-out;
 	transition:color .2s ease-in-out;
-	color: orange;
+	color: #f6caca;
 }
 
 .article a:hover:before {
@@ -221,7 +227,7 @@ sub {
 /* Paragraphs. */
 
 .article p {
-	font-size: 18pt;		
+	font-size: 12pt;		
 	line-height: 2em;
 	margin-bottom: 2em;
 	text-align: justify;
