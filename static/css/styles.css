@@ -13,6 +13,11 @@
 }
 
 @font-face {
+	font-family: 'Peralta';
+	src: url('../font/Peralta-Regular.woff2');
+}
+
+@font-face {
 	font-family: 'Graduate';
 	src: url('../font/Graduate-Regular.ttf');
 }
@@ -20,6 +25,11 @@
 @font-face {
 	font-family: 'Indie Flower';
 	src: url('../font/IndieFlower-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Peralta';
+	src: url('../font/Peralta-Regular.ttf');
 }
 
 /* General stuff. */
@@ -36,9 +46,11 @@ html { /* This stuff is for the sticky footer. */
 }
 
 body {
-	background-color: #52b2cf;
-	font-family:'Open Sans';
-	margin: 20px auto 100px auto; /* For sticky footer. */
+	color: #2a324b;
+	background-color: #c6e2e9;
+	font-family:'Indie Flower';
+	margin: 20px auto 100px auto;
+	font-size: 13pt; /* For sticky footer. */
 }
 
 /* Site header. */
@@ -66,7 +78,7 @@ body {
 }
 
 .sitetitle {
-	font-family: 'Anton';
+	font-family: 'Graduate';
 	font-weight: 300;
 	font-size: 4em;
 	padding-left: 10px; /* Hack to dodge :hover issue. */
@@ -103,6 +115,8 @@ body {
 
 .posttitle {
 	font-size: 1.6em;
+	font-family: 'Peralta';
+
 }
 
 .posttitle a {
@@ -122,7 +136,6 @@ body {
 }
 
 .postsummary {
-	font-family: Anton;
 	font-weight: 300;
 }
 
@@ -131,8 +144,7 @@ body {
 }
 
 /* Links. */
-a { 
-	color: #2E2E2E;
+a {
 	text-decoration: underline;
 	-o-transition:color .2s ease-in-out;
 	-webkit-transition:color .2s ease-in-out;
@@ -147,7 +159,7 @@ a {
 	height: 3px;
 	bottom: 0;
 	left: 0;
-	background-color: #f6caca;
+	background-color: #fbacbe;
 	visibility: visible;
 	opacity: 0.6;
 	-webkit-transform: scaleX(0);
@@ -164,7 +176,6 @@ a {
 
 .article a {
 	position: relative;
-	color: grey;
 	text-decoration: none;
 }
 .article a:hover {
@@ -176,6 +187,10 @@ a:hover {
 	-moz-transition:color .2s ease-in-out;
 	transition:color .2s ease-in-out;
 	color: #f6caca;
+}
+
+.posttitle a:visited {
+	color: inherit;
 }
 
 .article a:hover:before {
