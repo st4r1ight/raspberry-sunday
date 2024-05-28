@@ -60,6 +60,8 @@ body {
 	font-size: 18;
 	top: 15px;
 	text-align: center;
+	border-bottom: solid #2a324b;
+	border-bottom-width: thin;
 }
 
 .siteheader {
