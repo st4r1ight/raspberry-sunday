@@ -1,36 +1,6 @@
 @import url(pygments.css);
 @import url(reset.css);
-
-/* Fonts */
-@font-face {
-	font-family: 'Graduate';
-	src: url('../font/Graduate-Regular.woff2');
-}
-
-@font-face {
-	font-family: 'Indie Flower';
-	src: url('../font/IndieFlower-Regular.woff2');
-}
-
-@font-face {
-	font-family: 'Peralta';
-	src: url('../font/Peralta-Regular.woff2');
-}
-
-@font-face {
-	font-family: 'Graduate';
-	src: url('../font/Graduate-Regular.ttf');
-}
-
-@font-face {
-	font-family: 'Indie Flower';
-	src: url('../font/IndieFlower-Regular.ttf');
-}
-
-@font-face {
-	font-family: 'Peralta';
-	src: url('../font/Peralta-Regular.ttf');
-}
+@import url(fonts.css);
 
 /* General stuff. */
 
