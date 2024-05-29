@@ -104,8 +104,16 @@ body {
 /* The navbar. */
 
 .menu {
-	font-size: 1.3em;
+	font-size: 1em;
+	text-align: left;
+	margin: 0 30px 10px;
+	font-weight: bold;
 	/* padding-left: 30px; */
+}
+
+.menu a {
+	color: #2a324b;
+	text-decoration: underline;
 }
 
 .menu li {
@@ -125,6 +133,7 @@ body {
 	padding-left: 10px; /* Hack to dodge :hover issue. */
 	position: relative; /* Hack to dodge :hover issue. */
 	left: -10px; /* Hack to dodge :hover issue. */
+	color: #2a324b;
 }
 
 #postlist {
@@ -188,11 +197,7 @@ a:hover {
 	-webkit-transition:color .2s ease-in-out;
 	-moz-transition:color .2s ease-in-out;
 	transition:color .2s ease-in-out;
-	color: #f6caca;
-}
-
-.posttitle a:visited {
-	color: inherit;
+	color: #b5446e;
 }
 
 .article a:hover:before {
