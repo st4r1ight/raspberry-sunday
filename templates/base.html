@@ -46,7 +46,7 @@
       {% endif %}
 
       <div class = "sitebanner">
-	      <h2><a class="sitetitle nodec" href="{{ SITEURL }}"><span class="bold-initial">{{ AUTHOR }}</span></a></h2>
+	      <h2><a class="sitetitle nodec" href="{{ SITEURL }}"><span class="bold-initial">{{ SITENAME }}</span></a></h2>
         <h3 class ="sitesubtitle">{{ SITESUBTITLE }}</h3>
         <!-- nav -->
         <nav class="menu">
@@ -59,6 +59,13 @@
             {% if DISPLAY_PAGES_ON_MENU %}
               {% for p in PAGES %}
                 <li{% if p == page %} class="active"{% endif %}><a class="nodec" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+              {% endfor %}
+            {% endif %}
+
+            <!-- categories on menu -->
+            {% if DISPLAY_CATEGORIES_ON_MENU %}
+              {% for category in categories %}
+                <li><a class="nodec" href="{{ SITEURL }}/{{ category[0] }}">{{ category[0] }}</a></li>
               {% endfor %}
             {% endif %}
             <!-- services icons -->
