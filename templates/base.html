@@ -63,9 +63,11 @@
             {% endif %}
 
             <!-- categories on menu -->
-            {% if DISPLAY_CATEGORIES_ON_MENU %}
-              {% for category in categories %}
-                <li><a class="nodec" href="{{ SITEURL }}/{{ category[0] }}">{{ category[0] }}</a></li>
+            {% if DISPLAY_COUNTRIES_ON_MENU %}
+              {% for c in COUNTRIES %}
+                <li><a class="nodec" href="{{ SITEURL }}/category/{{ c['slug'] }}">
+                  <span class="flag">{{ c["flag"] }}</span>{{ c["name"] }}
+                </a></li>
               {% endfor %}
             {% endif %}
             <!-- services icons -->
