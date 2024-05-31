@@ -302,6 +302,16 @@ sub {
 	font-size: 1em;
 }
 
+.navbuttons {
+	display: flex;
+	margin: auto;
+	max-width: 500px;
+	justify-content: space-between;
+	color: #b5446e;
+	flex-direction: row;
+	font-family: 'Peralta';
+}
+
 /* Footer at page bottom */
 
 footer {

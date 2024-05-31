@@ -26,6 +26,31 @@
     {{ article.content }}
   </div><!-- .content -->
 
+  <div class="navbuttons">
+    {% if article.previous %}
+    <div><a href="{{article.previous}}" class="navleft">
+      < Previous
+    </a></div>
+    {%endif%}
+
+    {% if article.series %}
+      <div>
+      {% if article.series_link %}
+        <a href="{{article.series_link}}">{{article.series}}</a>
+      {% else %}
+        {{article.series}}
+      {%endif%}
+      </div>
+    {% endif %}
+
+    {% if article.next %}
+    <div>
+    <a href="{{article.next}}" class="navright">
+      Next >
+    </a> </div>
+    {%endif%}
+  </div>
+
 </section>
 
 {% endblock %}
