@@ -5,7 +5,7 @@
 /* General stuff. */
 
 body {
-	width: 900px;
+	max-width: 900px;
 }
 
 html { /* This stuff is for the sticky footer. */
@@ -13,6 +13,7 @@ html { /* This stuff is for the sticky footer. */
 	position:relative;
 	font-size: 18px;
 	-webkit-font-smoothing: antialiased;
+	padding: 0em 16px;
 }
 
 body {
@@ -148,7 +149,7 @@ a {
 	height: 3px;
 	bottom: 0;
 	left: 0;
-	background-color: #fbacbe;
+	background-color: #b5446e;
 	visibility: visible;
 	opacity: 0.6;
 	-webkit-transform: scaleX(0);
@@ -188,8 +189,6 @@ a:hover {
 /* Generic to all content. */
 
 .content ol, .content ul {
-	position: relative;
-	left: 40px;
 	padding-bottom: 20px;
 }
 
